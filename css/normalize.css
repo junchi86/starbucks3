@@ -1,0 +1,344 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. line height를 모든 브라우저에서 같게 보이게 최적화
+ * 2. iOS에서 폰트 사이즈 자동변경 방지
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * 모든 브라우저에서 여백 삭제
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * main 요소를 IE에서도 보여줄 수 있게 최적화
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * section과 article에 들어 있는 h1 요소에서 폰트크기와 여백을 크롬 파이어폭스 사파리에서 최적화Correct the font 
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* 그룹 
+   ========================================================================== */
+
+/**
+ * 1. 파이어폭스에서 박스사이징 최적화
+ * 2. 엣지와 IE에서 오버플로우 보여주기
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. 폰트 사이즈 상속과 폰트 사이즈 비율 최적화
+ * 2. em 사이즈 최적화
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* 텍스트
+   ========================================================================== */
+
+/**
+ * IE10의 활성화된 링크에서 회색 배경 삭제
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. 크롬 57-에서 바닥 경계선 삭제
+ * 2. text-decoration 기능 최적화(크롬 엣지 IE 오페라 사파리)
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * 폰트 두께 최적화 (크롬 엣지 사파리)
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. 폰트 사이즈 상속과 폰트 사이즈 비율 최적화
+ * 2. em 사이즈 최적화
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * 폰트사이즈 최적화
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * sub, sup 태그가 line-height 영향 주지 못하게 최적화
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * 이미지 안 경계 삭제(IE10)
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. 폰트 스타일 최적화
+ * 2. 파이어폭스와 사파리에서 여백 삭제
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * 엣지와 IE에서 overflow 보이게함
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * 텍스트 변형의 상속 삭제(엣지 파이어폭스 IE)
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * iOS와 사파리에서 클릭 가능한 속성 요소가 불가능한 상태를 최적화
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * 안쪽 경계와 패딩을 삭제(파이어폭스)
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * 이전 속성에 의한 focus style의 해제를 막음
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 파이어폭스에서 패딩 최적화
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. 엣지와 IE에서 text wrapping 최적화
+ * 2. IE에서 fieldset으로 부터 상속되는 컬러의 최적화
+ * 3. fieldset이 없을 시 패딩 삭제
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Chrome, Firefox, and Opera에서 세로 정렬 최적화.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * IE 10+에서 스크롤바 삭제
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. box sizing 최적화(IE10)
+ * 2. 패딩 삭제(IE 10.)
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * 크롬 증감버튼의 cursor 스타일 최적화
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. 크롬과 사파리에서 appearance 최적화
+ * 2. 사파리에서 outline 최적화
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * 크롬 사파리 맥os에서 내부 패딩 삭제
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. iOS와 사파리에서 클릭 가능한 속성 요소가 불가능한 상태를 최적화.
+ * 2. 사파리에서 폰트속성가 상속 되도록 최적화
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Edge, IE 10+, and Firefox의 display 속성 최적화.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * display 속성 최적화
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * IE 10+의 display 속성 최적화.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * IE 10의 display 속성 최적화
+ */
+
+[hidden] {
+  display: none;
+}
